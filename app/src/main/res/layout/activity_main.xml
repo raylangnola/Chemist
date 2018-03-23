@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.raylang.chemist.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewLivesLeft"
+        style="@style/OutputStyle"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:text="@string/strLivesLeft"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLitersAcid"
+        style="@style/OutputStyle"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:text="@string/strLitersOfAcid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLivesLeft" />
+
+    <TextView
+        android:id="@+id/textViewWaterPrompt"
+        style="@style/LabelStyle"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:text="@string/strWaterPrompt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLitersAcid" />
+
+    <EditText
+        android:id="@+id/editTextWaterInput"
+        style="@style/InputStyle"
+        android:inputType="numberDecimal"
+        android:hint="@string/strWaterHint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewWaterPrompt" />
+
+    <Button
+        android:id="@+id/btnInstructs"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:text="@string/btnInstructLabel"
+        app:layout_constraintEnd_toStartOf="@id/btnPlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextWaterInput"
+        android:onClick="showInstructs"/>
+
+    <Button
+        android:id="@+id/btnPlay"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:text="@string/btnPlayLabel"
+        android:onClick="playOnce"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnInstructs"
+        app:layout_constraintTop_toBottomOf="@id/editTextWaterInput" />
+
+</android.support.constraint.ConstraintLayout>

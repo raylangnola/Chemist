@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Chemist</string>
+    <string name="strLivesLeft">You have %d lives left</string>
+    <string name="strLitersOfAcid">There are %d liters of acid to be diluted</string>
+    <string name="strWaterPrompt">How many liters of water?</string>
+    <string name="strWaterHint">7 parts water to 3 parts acid</string>
+    <string name="btnInstructLabel">Instructions</string>
+    <string name="btnPlayLabel">Perform Mixture</string>
+    <string name="btnFinishLabel">Finish</string>
+    <string name="strGameOver">Game over</string>
+    <string name="strClickStartToBegin">Click \'New Game\' to begin</string>
+    <string name="strNewGame">New Game</string>
+    <string name="strTapToReturn">\n\nTap anywhere to return to game</string>
+    <string name="strDismiss">OK</string>
+</resources>
